@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "386744424422",
+    "project_id": "blindside-7cbf8",
+    "storage_bucket": "blindside-7cbf8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386744424422:android:662750debacc0a8a836827",
+        "android_client_info": {
+          "package_name": "com.example.blindside_code_challenge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "386744424422-invn43f5gpmi3cmtoa4tiaj88h2akba0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.blindside_code_challenge",
+            "certificate_hash": "e243459814b993272ebd55e5ce171225836bc9cf"
+          }
+        },
+        {
+          "client_id": "386744424422-1fmi7qss8tgd5ls475tf9617oobc75qj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH9ONt1xkq5IL983nYseqdDWpqgRo2Vjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "386744424422-1fmi7qss8tgd5ls475tf9617oobc75qj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
