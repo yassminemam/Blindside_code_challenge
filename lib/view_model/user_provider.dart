@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'package:firebase/firebase.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
@@ -60,7 +59,7 @@ class UserProvider extends ChangeNotifier {
                 .onError((error, stackTrace) {
               print(error.toString());
               print(stackTrace);
-            }).then((value) {});
+            });
           }
         });
       });

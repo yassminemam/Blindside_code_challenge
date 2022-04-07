@@ -121,7 +121,9 @@ class _AllVideosPageState extends State<AllVideosPage> {
                 Icons.comment,
                 color: Colors.white,
               ),
-              onPressed: () {},
+              onPressed: () {
+                _openPopup(context);
+              },
             ),
           )),
     );
@@ -136,6 +138,9 @@ class _AllVideosPageState extends State<AllVideosPage> {
   _openPopup(context) {
     Alert(
         context: context,
+        style: const AlertStyle(
+          isCloseButton: false,
+        ),
         title: "Add Comment",
         content: Column(
           children: <Widget>[
@@ -162,7 +167,7 @@ class _AllVideosPageState extends State<AllVideosPage> {
               "Comment",
               style: TextStyle(color: Colors.white, fontSize: 20),
             ),
-          )
+          ),
         ]).show();
   }
 }

@@ -106,9 +106,7 @@ class _SignInOTPPageState extends State<SignInOTPPage> {
               child: InkWell(
                 onTap: () {
                   Provider.of<UserProvider>(context, listen: false).otp = otp;
-                  context
-                      .read<AppAuthProvider>()
-                      .signInWithPhoneNumber(context: context)
+                  Provider.of<AppAuthProvider>(context, listen: false).signInWithPhoneNumber(context: context)
                       .then((value) => Navigator.pushNamed(
                       context, AppRoutes.all_videos_page));
                 },

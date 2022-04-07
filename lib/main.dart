@@ -73,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
-          initialRoute: AppRoutes.all_videos_page,
+          initialRoute: AppRoutes.sign_in_page,
           title: AppStrings.appTitle,
           routes: {
             AppRoutes.sign_in_phone_otp_page: (context) => SignInOTPPage(),

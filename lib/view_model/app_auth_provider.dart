@@ -55,11 +55,11 @@ class AppAuthProvider extends ChangeNotifier {
             verificationId: verificationId, smsCode: smsCode);
 
         // Sign the user in (or link) with the credential
-        await _auth.signInWithCredential(credential).then((value) {
+        await _auth.signInWithCredential(credential).then((value) async {
           AppUser user = AppUser(
               mobileNumber: Provider.of<UserProvider>(context, listen: false)
                   .mobileNumber!);
-          Provider.of<UserProvider>(context, listen: false)
+          await Provider.of<UserProvider>(context, listen: false)
               .createNewUserData(user: user)
               .then((value) => Navigator.pushReplacementNamed(
                   context, AppRoutes.all_videos_page));
